@@ -1,0 +1,6 @@
+framework module Pods_SelfWithdrawal {
+  umbrella header "Pods-SelfWithdrawal-umbrella.h"
+
+  export *
+  module * { export * }
+}
