@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		156EA4C51E6F579D0049F2B8 /* XIBViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 156EA4C21E6F579D0049F2B8 /* XIBViewController.h */; };
+		156EA4C61E6F579D0049F2B8 /* XIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 156EA4C31E6F579D0049F2B8 /* XIBViewController.m */; };
+		156EA4C71E6F579D0049F2B8 /* XIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 156EA4C41E6F579D0049F2B8 /* XIBViewController.xib */; };
 		4AE9F8C41E6F389000DA1459 /* SelfWithdrawal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE9F8C31E6F389000DA1459 /* SelfWithdrawal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AE9F8CB1E6F389000DA1459 /* SelfWithdrawal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE9F8C01E6F389000DA1459 /* SelfWithdrawal.framework */; };
 		4AE9F8D01E6F389000DA1459 /* SelfWithdrawalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9F8CF1E6F389000DA1459 /* SelfWithdrawalTests.m */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		156EA4C21E6F579D0049F2B8 /* XIBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XIBViewController.h; sourceTree = "<group>"; };
+		156EA4C31E6F579D0049F2B8 /* XIBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XIBViewController.m; sourceTree = "<group>"; };
+		156EA4C41E6F579D0049F2B8 /* XIBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBViewController.xib; sourceTree = "<group>"; };
 		18925842638C3BBE93053BF7 /* Pods-SelfWithdrawal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfWithdrawal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SelfWithdrawal/Pods-SelfWithdrawal.debug.xcconfig"; sourceTree = "<group>"; };
 		4AE9F8C01E6F389000DA1459 /* SelfWithdrawal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SelfWithdrawal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE9F8C31E6F389000DA1459 /* SelfWithdrawal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfWithdrawal.h; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 			children = (
 				4AE9F8DB1E6F39D400DA1459 /* PCViewController.h */,
 				4AE9F8DC1E6F39D400DA1459 /* PCViewController.m */,
+				156EA4C21E6F579D0049F2B8 /* XIBViewController.h */,
+				156EA4C31E6F579D0049F2B8 /* XIBViewController.m */,
+				156EA4C41E6F579D0049F2B8 /* XIBViewController.xib */,
 			);
 			name = "New Group";
 			sourceTree = "<group>";
@@ -132,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AE9F8DD1E6F39D400DA1459 /* PCViewController.h in Headers */,
+				156EA4C51E6F579D0049F2B8 /* XIBViewController.h in Headers */,
 				4AE9F8C41E6F389000DA1459 /* SelfWithdrawal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156EA4C71E6F579D0049F2B8 /* XIBViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				156EA4C61E6F579D0049F2B8 /* XIBViewController.m in Sources */,
 				4AE9F8DE1E6F39D400DA1459 /* PCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

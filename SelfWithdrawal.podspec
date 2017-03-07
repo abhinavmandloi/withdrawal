@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
  
   # 1
-  s.platform = :ios
+s.name = "SelfWithdrawal"
+  s.platform = :ios, '7.0'
   s.ios.deployment_target = '8.0'
-  s.name = “Selfwithdrawal”
-  s.summary = "Selfwithdrawal lets a user select an ice cream flavor."
+  s.summary = "SelfWithdrawal lets a user select an ice cream flavor."
   s.requires_arc = true
  
   # 2
@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   # 3
   s.license = { :type => "MIT", :file => "LICENSE" }
  
-  # 4 - Replace with your name and e-mail address
-  s.author = { “Abhinav” => "abhinav.mandloi@mindstix.com" }
+  # 4
+  s.author = {"Abhinav Mandloi" => "abhinav.mandloi@mindstix.com"}
  
   # For example,
   # s.author = { “Abhinav” => “abhinav.mandloi@mindstix.com" }
@@ -28,19 +28,15 @@ Pod::Spec.new do |s|
  
  
   # 6 - Replace this URL with your own Git URL from "Quick Setup"
-  s.source = { :git => "[Your RWPickFlavor Git URL Goes Here]", :tag => "#{s.version}"}
- 
-  # For example,
-  # s.source = { :git => "https://github.com/abhinavmandloi/withdrawal.git", :tag => "#{s.version}"}
- 
+  s.source = { :git => "https://github.com/abhinavmandloi/withdrawal.git", :tag => "#{s.version}", :commit => "a050f6286dc08c50ab97bafb915e454532063054"}
  
   # 7
   s.framework = "UIKit"
-  s.dependency ‘AFNetworking’~> ‘2.6.3’
  
   # 8
-  s.source_files = "Selfwithdrawal/**/*.{ObjectiveC}”
+  s.source_files = "SelfWithdrawal/*.{h,m}"
  
   # 9
-  s.resources = "Selfwithdrawal/**/*.{png,jpeg,jpg,storyboard,xib}"
+  s.resources = "SelfWithdrawal/**/*.{png,jpeg,jpg,storyboard,xib}"
+
 end
