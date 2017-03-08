@@ -32,6 +32,7 @@ s.name = "SelfWithdrawal"
  
   # 7
   s.framework = "UIKit"
+  s.dependency 'AFNetworking', '~>2.6.3' 
  
   # 8
   s.source_files = "SelfWithdrawal/*.{h,m}"
