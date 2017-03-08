@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_med.otf">
+            <string>BrandonGrotesque-Medium</string>
+        </array>
+        <array key="Brandon_reg.otf">
+            <string>BrandonGrotesque-Regular</string>
+        </array>
+        <array key="museo_sans_500.ttf">
+            <string>MuseoSans-500</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CashWithdrawalSuccessViewController">
+            <connections>
+                <outlet property="backScrollView" destination="Plt-1V-0JT" id="6V9-ox-s7e"/>
+                <outlet property="backToHomeButton" destination="eri-ka-mib" id="0q5-JJ-v56"/>
+                <outlet property="howToWithdrawCashButton" destination="e9Q-Su-XKJ" id="05D-nO-sXJ"/>
+                <outlet property="imdIDLabel" destination="N5e-NE-i2U" id="fTq-ZE-XFB"/>
+                <outlet property="mapImageView" destination="a14-qR-YZE" id="239-c5-cb6"/>
+                <outlet property="successImageView" destination="DVU-Bf-p0v" id="3gQ-Se-BDn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="645"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Plt-1V-0JT">
+                    <rect key="frame" x="0.0" y="66" width="320" height="595"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success_icon" translatesAutoresizingMaskIntoConstraints="NO" id="DVU-Bf-p0v">
+                            <rect key="frame" x="135" y="15" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="DVU-Bf-p0v" secondAttribute="height" multiplier="1:1" id="a5f-vQ-efc"/>
+                                <constraint firstAttribute="width" constant="50" id="mab-Lh-0Xm"/>
+                                <constraint firstAttribute="height" constant="50" id="ske-Zk-0qN"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5e-NE-i2U">
+                            <rect key="frame" x="24" y="80" width="270" height="152"/>
+                            <string key="text">4 Digit OTP for 
+IMT ID - 000211000013423 
+is sent to you via SMS</string>
+                            <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eri-ka-mib">
+                            <rect key="frame" x="96" y="566" width="126" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="126" id="7r2-sd-zy1"/>
+                                <constraint firstAttribute="height" constant="30" id="YZf-O5-aLZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BrandonGrotesque-Regular" family="Brandon Grotesque" pointSize="18"/>
+                            <state key="normal" title="Back to Home">
+                                <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="backToHomeButtonAction:" destination="-1" eventType="touchUpInside" id="iva-FJ-MdS"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9Q-Su-XKJ">
+                            <rect key="frame" x="31" y="510" width="256" height="34"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="BrandonGrotesque-Regular" family="Brandon Grotesque" pointSize="18"/>
+                            <state key="normal" title="How to Withdraw Cash">
+                                <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="howToWithdrawCashButtonAction:" destination="-1" eventType="touchUpInside" id="Pvn-di-LZ1"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Map_image" translatesAutoresizingMaskIntoConstraints="NO" id="a14-qR-YZE">
+                            <rect key="frame" x="24" y="240" width="270" height="252"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="252" id="YYt-hJ-mmJ"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="DVU-Bf-p0v" firstAttribute="centerX" secondItem="Plt-1V-0JT" secondAttribute="centerX" id="1m3-4q-Ujg"/>
+                        <constraint firstItem="a14-qR-YZE" firstAttribute="top" secondItem="Plt-1V-0JT" secondAttribute="top" constant="240" id="27r-o9-YrV"/>
+                        <constraint firstItem="eri-ka-mib" firstAttribute="top" secondItem="a14-qR-YZE" secondAttribute="bottom" constant="74" id="3N8-wl-oAH"/>
+                        <constraint firstItem="e9Q-Su-XKJ" firstAttribute="leading" secondItem="Plt-1V-0JT" secondAttribute="leading" constant="31" id="4rY-Vh-QqU"/>
+                        <constraint firstAttribute="trailing" secondItem="N5e-NE-i2U" secondAttribute="trailing" constant="26" id="717-Kx-uUS"/>
+                        <constraint firstItem="eri-ka-mib" firstAttribute="top" secondItem="e9Q-Su-XKJ" secondAttribute="bottom" constant="22" id="7Zg-dc-N65"/>
+                        <constraint firstAttribute="trailing" secondItem="a14-qR-YZE" secondAttribute="trailing" constant="26" id="8hV-pk-cAJ"/>
+                        <constraint firstItem="e9Q-Su-XKJ" firstAttribute="top" secondItem="a14-qR-YZE" secondAttribute="bottom" constant="18" id="BTj-MC-4uJ"/>
+                        <constraint firstItem="N5e-NE-i2U" firstAttribute="centerX" secondItem="Plt-1V-0JT" secondAttribute="centerX" constant="-1" id="F1X-3c-Ux2"/>
+                        <constraint firstItem="N5e-NE-i2U" firstAttribute="leading" secondItem="Plt-1V-0JT" secondAttribute="leading" constant="24" id="JTw-uh-ofn"/>
+                        <constraint firstAttribute="bottom" secondItem="eri-ka-mib" secondAttribute="bottom" constant="-1" id="Owo-ME-LA9"/>
+                        <constraint firstItem="a14-qR-YZE" firstAttribute="top" secondItem="N5e-NE-i2U" secondAttribute="bottom" constant="8" id="TUk-85-9g7"/>
+                        <constraint firstItem="a14-qR-YZE" firstAttribute="top" secondItem="N5e-NE-i2U" secondAttribute="bottom" constant="8" id="Y5r-sE-TlR"/>
+                        <constraint firstItem="eri-ka-mib" firstAttribute="centerX" secondItem="Plt-1V-0JT" secondAttribute="centerX" constant="-1.5" id="dkA-ha-4NP"/>
+                        <constraint firstItem="N5e-NE-i2U" firstAttribute="top" secondItem="DVU-Bf-p0v" secondAttribute="bottom" constant="15" id="icF-Am-1i5"/>
+                        <constraint firstItem="DVU-Bf-p0v" firstAttribute="top" secondItem="Plt-1V-0JT" secondAttribute="top" constant="15" id="kk2-of-WIT"/>
+                        <constraint firstItem="a14-qR-YZE" firstAttribute="centerX" secondItem="Plt-1V-0JT" secondAttribute="centerX" constant="-0.5" id="o0t-TX-SKG"/>
+                        <constraint firstItem="e9Q-Su-XKJ" firstAttribute="centerX" secondItem="Plt-1V-0JT" secondAttribute="centerX" constant="-1" id="zeK-23-kx0"/>
+                    </constraints>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUCCESSFUL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17j-ZT-h10">
+                    <rect key="frame" x="0.0" y="16" width="320" height="52"/>
+                    <color key="backgroundColor" red="0.06531567258883253" green="0.06531567258883253" blue="0.06531567258883253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="nEj-cX-SZ6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BrandonGrotesque-Medium" family="Brandon Grotesque" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Plt-1V-0JT" secondAttribute="bottom" constant="-16" id="2wh-KN-TT4"/>
+                <constraint firstAttribute="trailing" secondItem="17j-ZT-h10" secondAttribute="trailing" id="5XD-BQ-5xF"/>
+                <constraint firstAttribute="trailing" secondItem="Plt-1V-0JT" secondAttribute="trailing" id="GPn-V7-32o"/>
+                <constraint firstItem="Plt-1V-0JT" firstAttribute="top" secondItem="17j-ZT-h10" secondAttribute="bottom" constant="-2" id="JKX-iy-s4u"/>
+                <constraint firstItem="17j-ZT-h10" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="L8m-Cb-1v8"/>
+                <constraint firstItem="17j-ZT-h10" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VSm-mN-LzY"/>
+                <constraint firstItem="Plt-1V-0JT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rEf-bA-V70"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="35" y="-51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Map_image" width="286" height="223"/>
+        <image name="success_icon" width="50" height="50"/>
+    </resources>
+</document>

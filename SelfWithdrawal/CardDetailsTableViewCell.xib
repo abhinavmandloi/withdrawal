@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="museo_sans_300.ttf">
+            <string>MuseoSans-300</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardDetailsCell" id="KGk-i7-Jjw" customClass="CardDetailsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="210"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pza-Bd-JGl">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="210"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Account_icon" translatesAutoresizingMaskIntoConstraints="NO" id="b7o-dv-8pZ">
+                                <rect key="frame" x="30" y="25" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="1Xd-zV-2xC"/>
+                                    <constraint firstAttribute="width" constant="28" id="5jL-nb-DVs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m30-LA-TkS">
+                                <rect key="frame" x="78" y="8" width="256" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="40M-I8-G2p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoSans-300" family="Museo Sans" pointSize="14"/>
+                                <color key="textColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jim Dawson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enO-0U-CGH">
+                                <rect key="frame" x="78" y="34" width="256" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XCp-gT-YfE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoSans-300" family="Museo Sans" pointSize="22"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Phone_icon" highlightedImage="Phone_icon" translatesAutoresizingMaskIntoConstraints="NO" id="6Ru-aS-wZO">
+                                <rect key="frame" x="28" y="87" width="23" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22.399999999999999" id="HkT-3a-CLO"/>
+                                    <constraint firstAttribute="height" constant="21" id="imO-ab-UTU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUO-gK-XaF">
+                                <rect key="frame" x="76" y="70" width="256" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CsO-hH-MQQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoSans-300" family="Museo Sans" pointSize="14"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8836307545" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s90-Ff-Njb">
+                                <rect key="frame" x="76" y="96" width="127.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="O8P-jA-1aV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoSans-300" family="Museo Sans" pointSize="22"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Email_icon" highlightedImage="Phone_icon" translatesAutoresizingMaskIntoConstraints="NO" id="J2W-po-FKS">
+                                <rect key="frame" x="28" y="160" width="26" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="825-B3-lHw"/>
+                                    <constraint firstAttribute="height" constant="16" id="PES-K7-BlA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pW-Zb-k3E">
+                                <rect key="frame" x="76" y="143" width="256" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pas-OB-NNW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuseoSans-300" family="Museo Sans" pointSize="14"/>
+                                <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jimdawson@gmail.com" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyC-9Y-9Cs">
+                                <rect key="frame" x="76" y="160" width="233" height="50"/>
+                                <fontDescription key="fontDescription" name="MuseoSans-300" family="Museo Sans" pointSize="22"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="J2W-po-FKS" firstAttribute="top" secondItem="6Ru-aS-wZO" secondAttribute="bottom" constant="52" id="3zR-62-B3E"/>
+                            <constraint firstItem="enO-0U-CGH" firstAttribute="top" secondItem="m30-LA-TkS" secondAttribute="bottom" constant="5" id="5vK-Yy-eFN"/>
+                            <constraint firstAttribute="bottom" secondItem="wyC-9Y-9Cs" secondAttribute="bottom" id="7BY-x3-v9i"/>
+                            <constraint firstItem="6Ru-aS-wZO" firstAttribute="centerY" secondItem="pza-Bd-JGl" secondAttribute="centerY" constant="-7.5" id="7IZ-rr-e2l"/>
+                            <constraint firstItem="m30-LA-TkS" firstAttribute="top" secondItem="pza-Bd-JGl" secondAttribute="top" constant="8" id="C4F-NT-1x8"/>
+                            <constraint firstItem="s90-Ff-Njb" firstAttribute="leading" secondItem="6Ru-aS-wZO" secondAttribute="trailing" constant="25.5" id="G7F-Kf-0QM"/>
+                            <constraint firstItem="6Ru-aS-wZO" firstAttribute="leading" secondItem="pza-Bd-JGl" secondAttribute="leading" constant="28" id="IjY-12-wi7"/>
+                            <constraint firstItem="m30-LA-TkS" firstAttribute="leading" secondItem="b7o-dv-8pZ" secondAttribute="trailing" constant="20" id="M1J-5E-Ean"/>
+                            <constraint firstAttribute="trailing" secondItem="m30-LA-TkS" secondAttribute="trailing" constant="26" id="Ohx-ag-paA"/>
+                            <constraint firstItem="wyC-9Y-9Cs" firstAttribute="leading" secondItem="J2W-po-FKS" secondAttribute="trailing" constant="22" id="QKe-SG-XFN"/>
+                            <constraint firstAttribute="trailing" secondItem="enO-0U-CGH" secondAttribute="trailing" constant="26" id="Qez-D3-P5a"/>
+                            <constraint firstItem="8pW-Zb-k3E" firstAttribute="top" secondItem="s90-Ff-Njb" secondAttribute="bottom" constant="26" id="Ttl-9q-Lym"/>
+                            <constraint firstAttribute="trailing" secondItem="eUO-gK-XaF" secondAttribute="trailing" constant="28" id="VPR-la-PjF"/>
+                            <constraint firstItem="b7o-dv-8pZ" firstAttribute="leading" secondItem="pza-Bd-JGl" secondAttribute="leading" constant="30" id="Vnt-nl-5pm"/>
+                            <constraint firstItem="s90-Ff-Njb" firstAttribute="top" secondItem="eUO-gK-XaF" secondAttribute="bottom" constant="5" id="ZZj-pn-Vsx"/>
+                            <constraint firstItem="eUO-gK-XaF" firstAttribute="leading" secondItem="pza-Bd-JGl" secondAttribute="leading" constant="76" id="agp-ia-hYN"/>
+                            <constraint firstItem="enO-0U-CGH" firstAttribute="leading" secondItem="b7o-dv-8pZ" secondAttribute="trailing" constant="20" id="b8T-fC-acn"/>
+                            <constraint firstItem="8pW-Zb-k3E" firstAttribute="leading" secondItem="J2W-po-FKS" secondAttribute="trailing" constant="22" id="bgA-Wm-zyD"/>
+                            <constraint firstAttribute="trailing" secondItem="wyC-9Y-9Cs" secondAttribute="trailing" constant="51" id="bnR-nL-50k"/>
+                            <constraint firstItem="wyC-9Y-9Cs" firstAttribute="top" secondItem="8pW-Zb-k3E" secondAttribute="bottom" constant="-4" id="hoe-R4-34P"/>
+                            <constraint firstAttribute="trailing" secondItem="8pW-Zb-k3E" secondAttribute="trailing" constant="28" id="jG4-IE-3VW"/>
+                            <constraint firstItem="b7o-dv-8pZ" firstAttribute="top" secondItem="pza-Bd-JGl" secondAttribute="top" constant="25" id="pAd-VS-vdc"/>
+                            <constraint firstItem="J2W-po-FKS" firstAttribute="leading" secondItem="pza-Bd-JGl" secondAttribute="leading" constant="28" id="tXO-9Z-iVC"/>
+                            <constraint firstItem="eUO-gK-XaF" firstAttribute="top" secondItem="enO-0U-CGH" secondAttribute="bottom" constant="15" id="wRh-Vt-dVG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="pza-Bd-JGl" secondAttribute="bottom" id="2xf-4o-afd"/>
+                    <constraint firstItem="pza-Bd-JGl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ct7-kv-WIP"/>
+                    <constraint firstItem="pza-Bd-JGl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fU8-Vv-hyY"/>
+                    <constraint firstAttribute="trailing" secondItem="pza-Bd-JGl" secondAttribute="trailing" id="upg-g7-KKZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="pza-Bd-JGl" id="mrt-Cl-1sl"/>
+                <outlet property="detailLabel" destination="enO-0U-CGH" id="iVY-ke-rEn"/>
+                <outlet property="emailIDLabel" destination="wyC-9Y-9Cs" id="JNl-b8-Zu7"/>
+                <outlet property="emailId" destination="8pW-Zb-k3E" id="5SF-Ie-9c4"/>
+                <outlet property="iconImage" destination="b7o-dv-8pZ" id="aAo-DU-MvC"/>
+                <outlet property="mobileNumber" destination="eUO-gK-XaF" id="ZFh-Dy-fab"/>
+                <outlet property="phoneNumberLabel" destination="s90-Ff-Njb" id="6Se-oZ-V4G"/>
+                <outlet property="titleLabel" destination="m30-LA-TkS" id="hs8-OQ-vGJ"/>
+            </connections>
+            <point key="canvasLocation" x="-75" y="-40.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Account_icon" width="28" height="28"/>
+        <image name="Email_icon" width="28" height="18"/>
+        <image name="Phone_icon" width="24" height="23"/>
+    </resources>
+</document>

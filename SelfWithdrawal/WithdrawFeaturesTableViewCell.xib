@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_bld.otf">
+            <string>BrandonGrotesque-Bold</string>
+        </array>
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WithdrawFeaturesCell" id="KGk-i7-Jjw" customClass="WithdrawFeaturesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1M7-mQ-Syc">
+                        <rect key="frame" x="20" y="0.0" width="320" height="80"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dollar_icon" translatesAutoresizingMaskIntoConstraints="NO" id="zD8-1e-gIO">
+                                <rect key="frame" x="15" y="25" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="1HJ-Tc-fvQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="bua-kf-ZdU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSA-6W-sWD">
+                                <rect key="frame" x="60" y="15" width="237" height="29"/>
+                                <fontDescription key="fontDescription" name="BrandonGrotesque-Bold" family="Brandon Grotesque" pointSize="20"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDF-8s-NzM">
+                                <rect key="frame" x="60" y="47" width="237" height="18"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rDF-8s-NzM" secondAttribute="bottom" constant="15" id="1rb-nd-QWk"/>
+                            <constraint firstItem="mSA-6W-sWD" firstAttribute="top" secondItem="1M7-mQ-Syc" secondAttribute="top" constant="15" id="F45-Tz-SKr"/>
+                            <constraint firstItem="rDF-8s-NzM" firstAttribute="leading" secondItem="zD8-1e-gIO" secondAttribute="trailing" constant="15" id="Hmv-Tl-dXg"/>
+                            <constraint firstAttribute="trailing" secondItem="rDF-8s-NzM" secondAttribute="trailing" constant="23" id="XWA-97-e09"/>
+                            <constraint firstItem="zD8-1e-gIO" firstAttribute="centerY" secondItem="1M7-mQ-Syc" secondAttribute="centerY" id="Xxg-bb-gZr"/>
+                            <constraint firstAttribute="trailing" secondItem="mSA-6W-sWD" secondAttribute="trailing" constant="23" id="aIQ-KM-1AV"/>
+                            <constraint firstItem="mSA-6W-sWD" firstAttribute="leading" secondItem="zD8-1e-gIO" secondAttribute="trailing" constant="15" id="kSg-NI-Rvp"/>
+                            <constraint firstItem="zD8-1e-gIO" firstAttribute="leading" secondItem="1M7-mQ-Syc" secondAttribute="leading" constant="15" id="uQb-Mc-aEq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.88016365399999996" green="0.88516933470000003" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="1M7-mQ-Syc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="RwX-Nf-uEY"/>
+                    <constraint firstAttribute="trailing" secondItem="1M7-mQ-Syc" secondAttribute="trailing" constant="20" id="dd7-6M-DE2"/>
+                    <constraint firstItem="1M7-mQ-Syc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fyZ-8Y-Q6J"/>
+                    <constraint firstAttribute="bottom" secondItem="1M7-mQ-Syc" secondAttribute="bottom" id="weY-eo-Yze"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="1M7-mQ-Syc" id="KuN-qv-jyx"/>
+                <outlet property="detailLabel" destination="rDF-8s-NzM" id="UsO-XD-dnu"/>
+                <outlet property="iconImage" destination="zD8-1e-gIO" id="Cvh-4L-XDf"/>
+                <outlet property="titleLabel" destination="mSA-6W-sWD" id="cKw-dS-Slf"/>
+            </connections>
+            <point key="canvasLocation" x="-88" y="45"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Dollar_icon" width="32" height="32"/>
+    </resources>
+</document>

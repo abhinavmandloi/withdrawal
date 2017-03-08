@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WithdrawalHelpViewController">
+            <connections>
+                <outlet property="pageControl" destination="8oS-MY-Aww" id="DPc-6u-xPg"/>
+                <outlet property="scrollView" destination="NFS-SC-alo" id="Her-Tv-Av1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFS-SC-alo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="8oS-MY-Aww">
+                            <rect key="frame" x="113" y="587" width="129" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="129" id="gve-CV-xm3"/>
+                            </constraints>
+                        </pageControl>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="8oS-MY-Aww" firstAttribute="leading" secondItem="NFS-SC-alo" secondAttribute="leading" constant="113" id="1Xa-Lq-6Sz"/>
+                        <constraint firstAttribute="trailing" secondItem="8oS-MY-Aww" secondAttribute="trailing" constant="133" id="4Vv-VP-9bg"/>
+                        <constraint firstAttribute="bottom" secondItem="8oS-MY-Aww" secondAttribute="bottom" constant="43" id="GHy-dE-3Ps"/>
+                        <constraint firstItem="8oS-MY-Aww" firstAttribute="top" secondItem="NFS-SC-alo" secondAttribute="top" constant="587" id="oZK-dH-6g1"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NFS-SC-alo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OHS-gB-7jW"/>
+                <constraint firstAttribute="bottom" secondItem="NFS-SC-alo" secondAttribute="bottom" id="QfF-d1-5Fs"/>
+                <constraint firstItem="NFS-SC-alo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nQM-hg-RgO"/>
+                <constraint firstAttribute="trailing" secondItem="NFS-SC-alo" secondAttribute="trailing" id="tLZ-3Z-vDv"/>
+            </constraints>
+            <point key="canvasLocation" x="58.5" y="124.5"/>
+        </view>
+    </objects>
+</document>

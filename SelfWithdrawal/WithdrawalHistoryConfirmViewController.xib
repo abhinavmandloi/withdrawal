@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Brandon_reg.otf">
+            <string>BrandonGrotesque-Regular</string>
+        </array>
+        <array key="museo_sans_500.ttf">
+            <string>MuseoSans-500</string>
+        </array>
+        <array key="museo_sans_700-1.ttf">
+            <string>MuseoSans-700</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WithdrawalHistoryConfirmViewController">
+            <connections>
+                <outlet property="IMTID" destination="5DE-47-96V" id="686-aL-CcS"/>
+                <outlet property="IMTIDStaticLabel" destination="eQH-Vy-HUn" id="Bc1-HI-dqe"/>
+                <outlet property="actionButton" destination="c8D-V5-L7S" id="Kc4-eF-Zru"/>
+                <outlet property="backView" destination="hVP-LC-vTh" id="a7c-a7-gJ6"/>
+                <outlet property="dateLabel" destination="rjB-BU-APq" id="2Sg-9k-sTf"/>
+                <outlet property="firstLebel" destination="v2a-f6-Gwz" id="5AE-tc-MXB"/>
+                <outlet property="firstRoundView" destination="fg1-ma-uj3" id="6mG-Yr-DCL"/>
+                <outlet property="headerView" destination="xzJ-76-gGO" id="EsR-31-bNE"/>
+                <outlet property="horizontalView" destination="iIe-5G-KXo" id="bbs-HY-6dJ"/>
+                <outlet property="paymentMessage" destination="bdm-vy-ytn" id="Li3-LN-C1o"/>
+                <outlet property="secondLabel" destination="62r-eb-nPS" id="dKJ-fJ-MlX"/>
+                <outlet property="secondRoundView" destination="9OM-8q-kQk" id="8dN-u7-yv6"/>
+                <outlet property="susscesMessage" destination="FKJ-9f-Ww8" id="sG9-DT-MPt"/>
+                <outlet property="totalAmount" destination="N95-7N-WPt" id="FAh-l6-p24"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVP-LC-vTh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="351"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹500" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N95-7N-WPt">
+                            <rect key="frame" x="0.0" y="120" width="320" height="59"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="59" id="xq7-mR-vSc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="40"/>
+                            <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Initiated" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2a-f6-Gwz">
+                            <rect key="frame" x="44" y="205" width="103" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="103" id="TaQ-NJ-8Rp"/>
+                                <constraint firstAttribute="height" constant="21" id="l79-zk-iJn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="17"/>
+                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Completed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62r-eb-nPS">
+                            <rect key="frame" x="175" y="202" width="101" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="MAO-GR-lLg"/>
+                                <constraint firstAttribute="width" constant="101" id="qOE-aC-jDZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment can be withdrawn before" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdm-vy-ytn">
+                            <rect key="frame" x="0.0" y="231" width="320" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Nay-Rq-LOa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="14"/>
+                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 April 2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjB-BU-APq">
+                            <rect key="frame" x="91" y="261" width="139" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="D93-F3-NeP"/>
+                                <constraint firstAttribute="width" constant="139" id="wgs-Wp-duL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9OM-8q-kQk">
+                            <rect key="frame" x="220" y="191" width="10" height="10"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="cft-rT-3zU"/>
+                                <constraint firstAttribute="height" constant="10" id="pTB-Sb-dRZ"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fg1-ma-uj3">
+                            <rect key="frame" x="90" y="191" width="10" height="10"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="il5-xh-sXZ"/>
+                                <constraint firstAttribute="width" constant="10" id="kc6-6p-NgN"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iIe-5G-KXo">
+                            <rect key="frame" x="100" y="195" width="120" height="2"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="139-jv-juK"/>
+                                <constraint firstAttribute="width" constant="120" id="2Dl-DS-0ja"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8D-V5-L7S">
+                            <rect key="frame" x="78" y="305" width="160" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="5Ul-cf-EvC"/>
+                                <constraint firstAttribute="height" constant="35" id="Kmf-lu-2qg"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="agE-wl-D2q"/>
+                                <constraint firstAttribute="width" constant="160" id="xgF-hF-HEW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BrandonGrotesque-Regular" family="Brandon Grotesque" pointSize="18"/>
+                            <state key="normal" title="RESEND OTP">
+                                <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="d8z-XU-UEW"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The OTP will be sent to your mobile number +91-8836307545" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKJ-9f-Ww8">
+                            <rect key="frame" x="0.0" y="64" width="320" height="63"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="320" id="Ddm-zK-fcM"/>
+                                <constraint firstAttribute="height" constant="63" id="TJp-Cv-HQH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MuseoSans-700" family="Museo Sans" pointSize="18"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="N95-7N-WPt" firstAttribute="top" secondItem="FKJ-9f-Ww8" secondAttribute="bottom" constant="-7" id="2GY-v5-ijt"/>
+                        <constraint firstAttribute="height" constant="351" id="4LM-px-dD1"/>
+                        <constraint firstAttribute="trailing" secondItem="N95-7N-WPt" secondAttribute="trailing" id="5To-SV-01E"/>
+                        <constraint firstItem="62r-eb-nPS" firstAttribute="top" secondItem="9OM-8q-kQk" secondAttribute="bottom" constant="1" id="5Uu-9x-hrH"/>
+                        <constraint firstItem="bdm-vy-ytn" firstAttribute="top" secondItem="62r-eb-nPS" secondAttribute="bottom" constant="8" id="APc-LC-8Pb"/>
+                        <constraint firstAttribute="trailing" secondItem="bdm-vy-ytn" secondAttribute="trailing" id="CCx-H7-SFL"/>
+                        <constraint firstItem="iIe-5G-KXo" firstAttribute="top" secondItem="N95-7N-WPt" secondAttribute="bottom" constant="16" id="DVL-MY-Hc9"/>
+                        <constraint firstItem="v2a-f6-Gwz" firstAttribute="top" secondItem="iIe-5G-KXo" secondAttribute="bottom" constant="8" symbolic="YES" id="Fx4-FK-DGT"/>
+                        <constraint firstAttribute="bottom" secondItem="c8D-V5-L7S" secondAttribute="bottom" constant="11" id="KAl-hp-6KG"/>
+                        <constraint firstItem="rjB-BU-APq" firstAttribute="top" secondItem="bdm-vy-ytn" secondAttribute="bottom" constant="-5" id="KZ5-al-9tm"/>
+                        <constraint firstItem="rjB-BU-APq" firstAttribute="centerX" secondItem="hVP-LC-vTh" secondAttribute="centerX" id="ROm-6i-0kY"/>
+                        <constraint firstItem="iIe-5G-KXo" firstAttribute="leading" secondItem="fg1-ma-uj3" secondAttribute="trailing" id="S12-ct-yZ1"/>
+                        <constraint firstItem="v2a-f6-Gwz" firstAttribute="centerX" secondItem="fg1-ma-uj3" secondAttribute="centerX" id="Zpk-Tu-hVC"/>
+                        <constraint firstItem="v2a-f6-Gwz" firstAttribute="top" secondItem="fg1-ma-uj3" secondAttribute="bottom" constant="4" id="dTY-TL-9hZ"/>
+                        <constraint firstItem="FKJ-9f-Ww8" firstAttribute="centerX" secondItem="N95-7N-WPt" secondAttribute="centerX" id="gMq-d1-hsc"/>
+                        <constraint firstItem="N95-7N-WPt" firstAttribute="centerX" secondItem="hVP-LC-vTh" secondAttribute="centerX" id="jW0-my-tAx"/>
+                        <constraint firstItem="c8D-V5-L7S" firstAttribute="centerX" secondItem="hVP-LC-vTh" secondAttribute="centerX" constant="-2" id="jWa-cz-kIL"/>
+                        <constraint firstItem="N95-7N-WPt" firstAttribute="leading" secondItem="hVP-LC-vTh" secondAttribute="leading" id="k8J-j8-4gH"/>
+                        <constraint firstItem="9OM-8q-kQk" firstAttribute="leading" secondItem="iIe-5G-KXo" secondAttribute="trailing" id="mKR-9M-Mgd"/>
+                        <constraint firstItem="9OM-8q-kQk" firstAttribute="top" secondItem="fg1-ma-uj3" secondAttribute="top" id="qIw-aJ-f5Y"/>
+                        <constraint firstItem="c8D-V5-L7S" firstAttribute="top" secondItem="rjB-BU-APq" secondAttribute="bottom" constant="23" id="vjO-F7-Hj6"/>
+                        <constraint firstItem="62r-eb-nPS" firstAttribute="centerX" secondItem="9OM-8q-kQk" secondAttribute="centerX" id="yKX-ey-90Q"/>
+                        <constraint firstItem="bdm-vy-ytn" firstAttribute="leading" secondItem="hVP-LC-vTh" secondAttribute="leading" id="yRG-lN-7Nb"/>
+                        <constraint firstItem="iIe-5G-KXo" firstAttribute="centerX" secondItem="hVP-LC-vTh" secondAttribute="centerX" id="yuC-sg-wg9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzJ-76-gGO">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000211000013423" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DE-47-96V">
+                            <rect key="frame" x="139" y="10" width="210" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IMT ID - " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQH-Vy-HUn">
+                            <rect key="frame" x="61" y="11" width="70" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="Pwc-Cs-1PK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xzJ-76-gGO" firstAttribute="leading" secondItem="hVP-LC-vTh" secondAttribute="leading" id="7cx-LQ-umy"/>
+                <constraint firstAttribute="trailing" secondItem="hVP-LC-vTh" secondAttribute="trailing" id="IwT-tE-JDQ"/>
+                <constraint firstItem="hVP-LC-vTh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="S5J-ZG-ibo"/>
+                <constraint firstItem="hVP-LC-vTh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="g3f-ox-vd5"/>
+                <constraint firstItem="xzJ-76-gGO" firstAttribute="top" secondItem="hVP-LC-vTh" secondAttribute="top" id="o5i-jv-8qY"/>
+                <constraint firstItem="xzJ-76-gGO" firstAttribute="trailing" secondItem="hVP-LC-vTh" secondAttribute="trailing" id="svL-bb-6L3"/>
+            </constraints>
+            <point key="canvasLocation" x="68" y="81"/>
+        </view>
+    </objects>
+</document>

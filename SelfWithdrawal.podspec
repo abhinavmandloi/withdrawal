@@ -8,7 +8,7 @@ s.name = "SelfWithdrawal"
   s.requires_arc = true
  
   # 2
-  s.version = "0.1.0"
+  s.version = "0.1.1"
  
   # 3
   s.license = { :type => "MIT", :file => "LICENSE" }
@@ -28,15 +28,13 @@ s.name = "SelfWithdrawal"
  
  
   # 6 - Replace this URL with your own Git URL from "Quick Setup"
-  s.source = { :git => "https://github.com/abhinavmandloi/withdrawal.git", :tag => "#{s.version}", :commit => "a050f6286dc08c50ab97bafb915e454532063054"}
+  s.source = { :git => "https://github.com/abhinavmandloi/withdrawal.git", :tag => "#{s.version}", :commit => "4759927c73af62d7f36a05bae2ead1806d154eae" }
  
   # 7
   s.framework = "UIKit"
+  s.dependency 'AFNetworking', '~>2.6.3' 
  
   # 8
   s.source_files = "SelfWithdrawal/*.{h,m}"
- 
-  # 9
-  s.resources = "SelfWithdrawal/**/*.{png,jpeg,jpg,storyboard,xib}"
 
 end
