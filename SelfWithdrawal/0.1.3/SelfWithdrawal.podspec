@@ -38,6 +38,6 @@ s.name = "SelfWithdrawal"
   s.source_files = "SelfWithdrawal/*.{h,m}"
 
   #9
-  s.resources = "SelfWithdrawal/*"
+  s.resources = "SelfWithdrawal/**/*"
 
 end
